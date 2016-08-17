@@ -3,7 +3,17 @@
 # this is helpful to compile extension
 sudo apt-get install autoconf
 
-echo $TRAVIS_PHP_VERSION
+echo "environment"
+echo "-----------"
+echo "TRAVIS_PHP_VERSION=$TRAVIS_PHP_VERSION"
+echo "php -v"
+php -v
+echo "pear version"
+pear version
+echo "pecl version"
+pecl version
+echo
+echo
 
 # install correct apcu extension with pecl
 case "$TRAVIS_PHP_VERSION" in
